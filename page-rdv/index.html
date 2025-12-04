@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MTL TATTOO - Rendez-vous</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rendez-vous</h1>
+    </header>
+    <main>
+      <form action="">
+        <fieldset>
+          <legend>Informations personnelles</legend>
+
+          <div>
+            <label>Nom complet</label><br>
+            <input type="text" id="prenom" placeholder="Jean" />
+            <input type="text" id="nom" placeholder="Bernard" />  
+          </div>
+
+          <div>
+            <label for="tel">Téléphone</label><br>
+            <!-- <input type="text" id="tel" placeholder="(123) 456-7890"> -->
+            <input type="tel" id="tel" placeholder="(123) 456-7890">
+          </div>
+
+          <div>
+            <label for="email">Courriel</label><br>
+            <input type="email" id="email" placeholder="nom@exemple.com">
+          </div>
+
+          <div>
+            <label for="birth-date">Date de naissance</label><br>
+            <input type="date" id="birth-date" placeholder="AAAA/MM/JJ">
+          </div>
+
+          <div>
+            <label for="adresse">Adresse</label><br>
+            <input type="text" id="adresse" placeholder="123 rue, Ville">
+          </div>
+
+          <div>
+            <label for="postal">Code postal</label><br>
+            <input type="text" id="postal" placeholder="A1B 2C3">
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Détails tatouage</legend>
+
+          <div>
+            <label for="corps">Partie du corps</label><br>
+            <select name="" id="corps">
+              <option value="" disabled>partie du corps</option>
+  
+              <option value="">yeux</option>
+              <option value="">visage</option>
+              <option value="">bras</option>
+              <option value="">jambe</option>
+              <option value="">dos</option>
+              <option value="">ventre</option>
+            </select>  
+          </div>
+
+          <div>
+            <label for="taille">Taille du tatouage</label><br>
+            <input type="number" name="" id="taille" min="0" max="100">
+            <select name="" id="">
+              <option value="">cm</option>
+              <option value="">inch</option>
+              <option value="">freedom units</option>
+            </select>  
+          </div>
+
+          <div>
+            <label for="taille">Artiste</label><br>
+            <select name="" id="artiste">
+              <option value="">Jean Bernard</option>
+              <option value="">Mike Oxlong</option>
+              <option value="">Ben Dover</option>
+              <option value="">Robert Topela</option>
+              <option value="">Hubert Pornelius</option>
+              <option value="">Goonus Maximus</option>
+              <option value="">Robustus Gloup</option>
+              <option value="">Donald Trump</option>
+              <option value="">中國版唐納川普</option>
+              <option value="">Bubba</option>
+            </select>  
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p>&copy;MTL TATTOO</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
