@@ -6,7 +6,7 @@
     <title>MTL TATTOO - Rendez-vous</title>
 
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/rdv.css" />
   </head>
   <body>
     <header>
@@ -25,8 +25,7 @@
 
           <div>
             <label for="tel">Téléphone</label><br>
-            <!-- <input type="text" id="tel" placeholder="(123) 456-7890"> -->
-            <input type="tel" id="tel" placeholder="(123) 456-7890">
+            <input type="tel" id="tel" placeholder="(123) 456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
           </div>
 
           <div>
@@ -36,7 +35,7 @@
 
           <div>
             <label for="birth-date">Date de naissance</label><br>
-            <input type="date" id="birth-date" placeholder="AAAA/MM/JJ">
+            <input type="date" id="dateNaissance" placeholder="AAAA/MM/JJ">
           </div>
 
           <div>
@@ -65,6 +64,8 @@
               <option value="">jambe</option>
               <option value="">dos</option>
               <option value="">ventre</option>
+              <option value="">cou</option>
+              <option value="">cuisse</option>
             </select>  
           </div>
 
@@ -94,12 +95,37 @@
             </select>  
           </div>
         </fieldset>
+
+        <fieldset>
+          <legend>Date du rendez-vous (jour)</legend>
+          <h1><b>&lt;</b> Décembre <b>&gt;</b></h1>
+
+          <div id="datepicker">
+            <div id="jours-semaine">
+              <span class="datepicker-item">D</span>
+              <span class="datepicker-item">L</span>
+              <span class="datepicker-item">Ma</span>
+              <span class="datepicker-item">Me</span>
+              <span class="datepicker-item">J</span>
+              <span class="datepicker-item">V</span>
+              <span class="datepicker-item">S</span>
+            </div>
+
+            <div id="jours"></div>
+          </div>
+
+          <div id="timepicker"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Date du rendez-vous (heure)</legend>
+        </fieldset>
       </form>
     </main>
     <footer>
       <p>&copy;MTL TATTOO</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/rdv.js"></script>
   </body>
 </html>
