@@ -14,7 +14,7 @@
     </header>
     <main>
       <form action="">
-        <fieldset>
+        <fieldset id="form-personal-info">
           <legend>Informations personnelles</legend>
 
           <div>
@@ -50,7 +50,7 @@
 
         </fieldset>
 
-        <fieldset>
+        <fieldset id="form-tattoo-details">
           <legend>Détails tatouage</legend>
 
           <div>
@@ -71,41 +71,43 @@
 
           <div>
             <label for="taille">Taille du tatouage</label><br>
-            <input type="number" name="" id="taille" min="0" max="100">
-            <select name="" id="">
+            <input type="number" name="" id="taille" min="0" max="100"> cm<span>2</span>
+            <!-- <select name="" id="">
               <option value="">cm</option>
               <option value="">inch</option>
               <option value="">freedom units</option>
-            </select>  
+            </select>   -->
           </div>
 
           <div>
             <label for="taille">Artiste</label><br>
             <select name="" id="artiste">
-              <option value="">Jean Bernard</option>
-              <option value="">Mike Oxlong</option>
-              <option value="">Ben Dover</option>
-              <option value="">Robert Topela</option>
-              <option value="">Hubert Pornelius</option>
-              <option value="">Goonus Maximus</option>
-              <option value="">Robustus Gloup</option>
-              <option value="">Donald Trump</option>
-              <option value="">中國版唐納川普</option>
-              <option value="">Bubba</option>
+              <option value="">AZL</option>
+              <option value="">Carey Chan</option>
+              <option value="">Shamus Mahannah</option>
+              <option value="">Eilo</option>
+              <option value="">Max</option>
+              <option value="">Julian</option>
+              <option value="">Julines</option>
+              <option value="">SBU</option>
+              <option value="">Céleste</option>
+              <option value="">Robbie</option>
+              <option value="">Jess</option>
+              <option value="">Lia</option>
             </select>  
           </div>
         </fieldset>
 
-        <fieldset>
-          <legend>Date du rendez-vous (jour)</legend>
+        <fieldset id="form-date-day">
+          <legend>Date du rendez-vous</legend>
           <h1><b>&lt;</b> Décembre <b>&gt;</b></h1>
 
           <div id="datepicker">
             <div id="jours-semaine">
               <span class="datepicker-item">D</span>
               <span class="datepicker-item">L</span>
-              <span class="datepicker-item">Ma</span>
-              <span class="datepicker-item">Me</span>
+              <span class="datepicker-item">M</span>
+              <span class="datepicker-item">M</span>
               <span class="datepicker-item">J</span>
               <span class="datepicker-item">V</span>
               <span class="datepicker-item">S</span>
@@ -113,14 +115,20 @@
 
             <div id="jours"></div>
           </div>
+          </fieldset>
 
-          <div id="timepicker"></div>
-        </fieldset>
+        <fieldset id="form-date-hour">
+          <legend>Date du rendez-vous (suite)</legend>
+          <!-- <h1><b>&lt;</b> Décembre <b>&gt;</b></h1> -->
 
-        <fieldset>
-          <legend>Date du rendez-vous (heure)</legend>
+          <div id="timepicker"></div>  
         </fieldset>
       </form>
+
+      <div id="navigation-form">
+        <button onclick="navigateForm(-1)">Précédent</button>
+        <button onclick="navigateForm(1)">Suivant</button>
+      </div>
     </main>
     <footer>
       <p>&copy;MTL TATTOO</p>

@@ -1,13 +1,68 @@
+@charset "uft-8";
+
+/**************************
+            STYLES GENERAUX
+**************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#jours .datepicker-item, .timepicker-item{
+    transition-property: background-color, color;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+#jours .datepicker-item:hover, .timepicker-item:hover{
+    cursor: pointer;
+    color: white;
+}
+
+fieldset{
+    max-width: 95vw;
+    margin: auto;
+}
+
+header, footer{
+    height: 20vh;
+}
+
+.none{
+    display: none;
+}
 
 
-#jours-semaine{
+
+/**************************
+            STYLES HEADER
+**************************/
+
+
+
+/**************************
+            STYLES MAIN
+**************************/
+/* general */
+/* main{
+    height: 100vh;
+} */
+
+/* fieldset#form-date-day */
+#datepicker-container{
     display: flex;
 }
 
-#jours{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+#datepicker{
+    flex: 3 1 75%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#jours-semaine{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
 }
 
 .datepicker-item{
@@ -15,29 +70,64 @@
     /* width: 50px;
     height: 50px;
     padding: 10px; */
-    width: 50px;
-    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 20px;
     font-weight: bolder;
-    font-size: 1.75rem;
+    font-size: 1.125rem;
     text-align: center;
+    user-select: none;
 }
 
+#jours{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    row-gap: 10px;
+}
+
+#jours .datepicker-item{
+    background-color: lightblue;
+}
+#jours .datepicker-item:hover{
+    background-color: darkblue;
+}
+
+/* fieldset#form-date-hour */
 #timepicker{
+    flex: 1 1 25%;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    /* flex-direction: column; */
+    /* flex-flow: column wrap; */
+    flex-wrap: wrap;
+    gap: 5px;
+    row-gap: 10px;
 
     padding: 10px;
-    height: 100px;
+    /* height: 100px; */
     border: 1px solid black;
-    overflow: scroll;
+    border-radius: 10px;
+    /* overflow-y: scroll; */
 }
 
 .timepicker-item{
     background-color: gold;
-    width: 200px;
+    width: 100%;
     border-radius: 20px;
     font-weight: bold;
     font-size: 2rem;
     text-align: center;
 }
+.timepicker-item:hover{
+    background-color: brown;
+}
+
+
+
+/**************************
+            STYLES FOOTER
+**************************/
+
+
