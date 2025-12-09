@@ -1,7 +1,6 @@
 /* 
             VARIABLES
 */
-
 const 
 datepickerJours = document.querySelector("#jours"),
 timepicker = document.querySelector("#timepicker"),

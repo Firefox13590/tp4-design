@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="css/rdv.css" />
   </head>
   <body>
-    <header>
+    <!-- <header>
       <h1>Rendez-vous</h1>
-    </header>
+    </header> -->
+    <iframe src="header.html" frameborder="0"></iframe>
     <main>
       <form action="">
         <fieldset id="form-personal-info">
-          <legend>Informations personnelles</legend>
+          <h2>Informations personnelles</h2>
 
           <div>
             <label>Nom complet</label><br>
@@ -51,7 +52,7 @@
         </fieldset>
 
         <fieldset id="form-tattoo-details">
-          <legend>Détails tatouage</legend>
+          <h2>Détails tatouage</h2>
 
           <div>
             <label for="corps">Partie du corps</label><br>
@@ -70,8 +71,8 @@
           </div>
 
           <div>
-            <label for="taille">Taille du tatouage</label><br>
-            <input type="number" name="" id="taille" min="0" max="100"> cm<span>2</span>
+            <label for="taille">Surface du tatouage (cm <sup>2</sup>)</label><br>
+            <input type="number" name="" id="taille" value="10" min="1" max="100">
             <!-- <select name="" id="">
               <option value="">cm</option>
               <option value="">inch</option>
@@ -99,7 +100,7 @@
         </fieldset>
 
         <fieldset id="form-date-day">
-          <legend>Date du rendez-vous</legend>
+          <h2>Date du rendez-vous</h2>
           <h1><b>&lt;</b> Décembre <b>&gt;</b></h1>
 
           <div id="datepicker">
@@ -118,7 +119,7 @@
           </fieldset>
 
         <fieldset id="form-date-hour">
-          <legend>Date du rendez-vous (suite)</legend>
+          <h2>Date du rendez-vous (suite)</h2>
           <!-- <h1><b>&lt;</b> Décembre <b>&gt;</b></h1> -->
 
           <div id="timepicker"></div>  
@@ -130,9 +131,10 @@
         <button onclick="navigateForm(1)">Suivant</button>
       </div>
     </main>
-    <footer>
+    <!-- <footer>
       <p>&copy;MTL TATTOO</p>
-    </footer>
+    </footer> -->
+    <iframe src="footer.html" frameborder="0"></iframe>
 
     <script src="js/rdv.js"></script>
   </body>

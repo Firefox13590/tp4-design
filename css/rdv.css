@@ -1,4 +1,5 @@
 @charset "uft-8";
+@import url("themes.css");
 
 /**************************
             STYLES GENERAUX
@@ -19,12 +20,12 @@
     color: white;
 }
 
-fieldset{
+fieldset, div#navigation-form{
     max-width: 95vw;
     margin: auto;
 }
 
-header, footer{
+iframe{
     height: 20vh;
 }
 
@@ -47,6 +48,29 @@ header, footer{
 /* main{
     height: 100vh;
 } */
+
+fieldset{
+    background-color: var(--neutral-base-color);
+    border: none;
+    border-radius: 20px 20px 0 0;
+}
+
+fieldset h2{
+    color: var(--primary-color);
+}
+
+fieldset label{
+    color: var(--accent-color-light);
+}
+
+fieldset > div{
+    margin-bottom: 20px;
+}
+
+input, select{
+    border-radius: 5px;
+    padding: 2px 5px;
+}
 
 /* fieldset#form-date-day */
 #datepicker-container{
@@ -122,6 +146,24 @@ header, footer{
 }
 .timepicker-item:hover{
     background-color: brown;
+}
+
+/* navigation form */
+#navigation-form{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    background-color: var(--neutral-base-color);
+    border-radius: 0 0 20px 20px;
+    padding: 10px;
+}
+
+#navigation-form button{
+    font-size: 1.25rem;
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: none;
 }
 
 
