@@ -1,5 +1,5 @@
-@charset "uft-8";
-@import url("general.css");
+@charset "utf-8";
+/* @import url("general.css"); */
 
 /**************************
             STYLES GENERAUX
@@ -29,10 +29,6 @@ iframe{
     min-height: 20vh;
     width: 100vw;
     overflow: hidden;
-}
-
-.none{
-    display: none;
 }
 
 
@@ -197,6 +193,7 @@ input, select{
     width: 100%;
     height: 100%;
     background-color: var(--accent-color);
+    transition: width .5s ease;
 }
 
 

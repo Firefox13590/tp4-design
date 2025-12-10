@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url("general.css");
+/* @import url("general.css"); */
 
 /**************************
             STYLES GENERAUX
@@ -7,6 +7,7 @@
 footer{
     background-color: var(--neutral-base-color);
     padding: 10px 0;
+
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -67,6 +68,43 @@ footer *{
 /**************************
             STYLES LANGUE
 **************************/
+#langue{
+    grid-column: 2/4;
+    grid-row: 5/6;
+
+    background-color: var(--neutral-base-color-lighter);
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#langue::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background-color: var(--accent-color-light);
+    opacity: .5;
+    transition: left .25s ease;
+}
+
+#cc-langue:checked ~ #langue::before{
+    left: 50%;
+}
+
+#langue > h2{
+    color: var(--neutral-base-color);
+    z-index: 1;
+}
 
 
 

@@ -1,3 +1,4 @@
+/* styles generaux */
 :root{
     --neutral-base-color: #3D2D33;
     --neutral-base-color-light: #948289;
@@ -18,4 +19,37 @@
     box-sizing: border-box;
 }
 
+/* polices */
+@font-face {
+    font-family: "Alexandria";
+    src: url("../fonts/alexandria_5.2.8/webfonts/alexandria-latin-ext-400-normal.woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Kaushan Script";
+    src: url("../fonts/Kaushan_Script/KaushanScript-Regular.ttf");
+}
+@font-face {
+    font-family: "Libre Caslon Text";
+    src: url("../fonts/Libre_Caslon_Text/LibreCaslonText-Bold.ttf");
+    /* font-weight: bold; */
+}
+
+
+/* autres styles */
+body{
+    font-family: Alexandria;
+}
+h1{
+    font-family: "Kaushan Script";
+    font-size: 2rem;
+}
+h2{
+    font-family: "Libre Caslon Text";
+    font-size: 1.25rem;
+}
+
+.none{
+    display: none;
+}
 
