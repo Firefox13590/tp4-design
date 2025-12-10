@@ -22,7 +22,7 @@ header nav .textes {
   flex: 1;
 }
 
-header nav button.menuBurger {
+header nav div.menuBurger {
   background: none;
   border: none;
   margin-left: 10px;
@@ -39,7 +39,7 @@ header nav .barre1, .barre2, .barre3, .barre4 {
   position: relative;
 }
 
-header nav .barre2 {
+header nav .barre2, header nav .barre3 {
   transition: 0.2s;
 }
 
@@ -50,34 +50,19 @@ Header nav .barre2.actif {
 
 header nav .barre3 {
   position: absolute;
-  transition: 0.2s;
 }
 
 header nav .barre3.actif {
   rotate: -45deg;
 }
 
-
-@keyframes ouvertureMenuBarre2 {
-  0% {
-    rotate: 0deg;
-  }
-  100% {
-    rotate: -45deg;
-  }
-}
-
-@keyframes ouvertureMenuBarre3 {
-  0% {
-    rotate: 0deg;
-  }
-  100% {
-    rotate: 45deg;
-  }
-}
-
-header nav ul {
+header nav a {
   display: none;
+  transition: 0.2s;
+}
+
+header nav a.actif {
+  display: flex;
 }
 
 header nav h1 {
