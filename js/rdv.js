@@ -7,8 +7,9 @@ timepicker = document.querySelector("#timepicker"),
 // /** @type {NodeListOf<HTMLButtonElement>} */
 // btnsNavigationForm = document.querySelectorAll("#navigation-form button"),
 btnsNavigationForm = document.querySelectorAll("button"),
-sectionsForm = document.querySelectorAll("fieldset");
-console.log(datepickerJours, timepicker, btnsNavigationForm, sectionsForm);
+sectionsForm = document.querySelectorAll("fieldset"),
+barreProgression = document.querySelector("div#barre-progression > div");
+console.log(datepickerJours, timepicker, btnsNavigationForm, sectionsForm, barreProgression);
 
 let
 progressionForm = 0;
@@ -34,6 +35,8 @@ function updateFormDisplay(){
     }else{
         btnsNavigationForm.forEach(elem => elem.disabled = false);
     }
+
+    barreProgression.style.width = `${progressionForm * 25}%`;
 }
 
 /**
