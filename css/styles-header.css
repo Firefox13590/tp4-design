@@ -20,19 +20,28 @@ header nav .textes {
   display: flex;
   justify-content: flex-start;
   flex: 1;
+  position: relative;
+}
+
+header nav h1 {
+  margin-left: 64px;
 }
 
 header nav div.menuBurger {
   background: none;
   border: none;
-  margin-left: 10px;
-  margin-right: 10px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: fit-content;
+  height: fit-content;
   gap: 10px;
+  position: absolute;
+  top: 25%;
+  bottom: 25%;
+  left: 10px;
+
 }
 
 header nav .barre1, .barre2, .barre3, .barre4 {
@@ -41,15 +50,16 @@ header nav .barre1, .barre2, .barre3, .barre4 {
 
 header nav .barre2, header nav .barre3 {
   transition: 0.2s;
+  position: absolute;
 }
 
 Header nav .barre2.actif {
   rotate: 45deg;  
 } 
 
-
-header nav .barre3 {
-  position: absolute;
+header nav .boutonX {
+  position: relative;
+  height: fit-content;
 }
 
 header nav .barre3.actif {
