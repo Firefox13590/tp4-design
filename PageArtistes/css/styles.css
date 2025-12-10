@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/* =================== VARIABLES =================== */
+:root {
+    --base-color-dark: #3D2D33;
+    --text-color-light: #FFD5DE;
+    --primary-color: #FFC861;
+    --call-to-action-color: #FF6B83;
+}
+
+/* ===================== FONTS ===================== */
+
+.libre-caslon-text-bold {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kaushan-script-regular {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* ==================== STYLES ===================== */
+
+main {
+    background-color: var(--base-color-dark);
+}
+
+/* section d'un artiste */
+.artiste {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+/* groupe de 3 cadres */
+.artiste .profile {
+    display: grid;
+    width: 100vw;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    flex: 1 1;
+
+}
+
+/* ajustement padding à gauche */
+.artiste .profile .image:first-child {
+    padding-left: 3rem;
+}
+
+/* image et cadre individuel */
+.artiste .profile .image {
+display: grid;
+width: fit-content;
+grid-template: 40px 200px 40px / 40px 200px 40px;
+justify-items: stretch;
+align-items: stretch;
+}
+
+/* image */
+.artiste .profile .image img {
+    grid-area: 2 / 2 / 3 / 3;
+    z-index: 0;
+}
+
+/* cadre */
+
+.artiste .profile .image .cadre {
+    grid-area: 1 / 1 / 4 / 4;
+    z-index: 1;
+}
+
+/* fleche */
+.artiste .profile .fleche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    margin-right: 3rem;
+}
+
+/* icone fleche  */
+.artiste .profile div svg {
+    justify-items: center;
+    align-items: center;
+}
+
+/* Textes */
+h1 {
+    font-family: "Libre Caslon Text", serif;
+    margin: 0px;
+}
+
+
+main h1 {
+    padding-top: 3rem;
+    color: var(--text-color-light);
+    font-size: 40pt;
+
+}
+h2 {
+    font-family: "Kaushan Script", cursive;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 24pt;
+
+    width: 80%;
+    flex: 1 1;
+    margin: 0px;
+    border-bottom: solid var(--primary-color);
+
+}
+
+.artiste h2 {
+    justify-self: center;
+}
+
+h3 {
+    font-family: "Kaushan Script", cursive;
+    color: var(--call-to-action-color);
+    font-size: 24pt;
+}
+
+
