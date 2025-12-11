@@ -7,20 +7,22 @@ header{
     flex: 1 1 10%;
 
     background-color: #880D1E80;
+    color: var(--neutral-base-color);
 
     display: flex;
     justify-content: space-between;
 }
 
 header span.material-symbols-outlined{
-    display: none;
     font-size: 48px;
     font-weight: bold;
 }
 
 header img{
     width: 64px;
-    /* mix-blend-mode: lighten; */
+    aspect-ratio: 808/980;
+
+    align-self: flex-start;
 }
 
 
