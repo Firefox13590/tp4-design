@@ -1,3 +1,9 @@
+.libre-caslon-text-bold {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -28,9 +34,6 @@ header nav h1 {
 }
 
 header nav div.menuBurger {
-  background: none;
-  border: none;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,11 +44,29 @@ header nav div.menuBurger {
   top: 25%;
   bottom: 25%;
   left: 10px;
+  z-index: 10;
+}
+
+header nav .menuBurger .background {
+  position: absolute;
+  left: -12px;
+  transition: 0.2s;
+  translate: 0 -600px;
+}
+
+header nav .menuBurger .background.actif {
+  translate: 0;
+  
 
 }
 
 header nav .barre1, .barre2, .barre3, .barre4 {
   position: relative;
+}
+
+header nav .barre1, .barre4 {
+  width: 100%;
+  height: 4px;
 }
 
 header nav .barre2, header nav .barre3 {
@@ -59,7 +80,7 @@ Header nav .barre2.actif {
 
 header nav .boutonX {
   position: relative;
-  height: fit-content;
+  height: 4px;
 }
 
 header nav .barre3.actif {
@@ -69,10 +90,21 @@ header nav .barre3.actif {
 header nav a {
   display: none;
   transition: 0.2s;
+  font-family: "Libre Caslon Text", serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration-line: none;
+  color: var(--base-color-dark);
+  position: relative;
+  top: 10px;
 }
 
 header nav a.actif {
   display: flex;
+}
+
+header nav a.selection {
+  color: #880d1e;
 }
 
 header nav h1 {
@@ -112,6 +144,15 @@ header .toggle h1 {
   top: 25%;
   bottom: 25%;
   color: var(--primary-color);
+  pointer-events: none;
+}
+
+header .toggle svg {
+  pointer-events: none;
+}
+
+header .toggle path {
+  pointer-events: none;
 }
 
 /*arriere des boutons toggle */
@@ -120,6 +161,7 @@ header .backgroundToggle {
   grid-row-start: 1;
   width: 100%;
   height: auto;
+  fill: var(--base-color-dark);
 }
 /* posiition du bouton des tattoueurs */
 header .toggleTattoo {

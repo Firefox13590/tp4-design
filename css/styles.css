@@ -22,10 +22,21 @@
   font-style: normal;
 }
 
-/* ==================== STYLES ===================== */
+/* <weight>: Use a value from 100 to 900 */
+/* <uniquifier>: Use a unique and descriptive class name */
+
+.alexandria-uniquifier {
+  font-family: "Alexandria", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/* ==================== STYLES ===================== */ 
 
 main {
     background-color: var(--base-color-dark);
+    z-index: 0;
 }
 
 /* section d'un artiste */
@@ -92,6 +103,18 @@ align-items: stretch;
     align-items: center;
 }
 
+
+/* Section pour la page vide */
+main section.vide {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-color: #584149;
+}
+
+
 /* Textes */
 h1 {
     font-family: "Libre Caslon Text", serif;
@@ -110,16 +133,20 @@ h2 {
     text-align: center;
     color: var(--primary-color);
     font-size: 24pt;
-
-    width: 80%;
-    flex: 1 1;
-    margin: 0px;
-    border-bottom: solid var(--primary-color);
-
 }
 
 .artiste h2 {
     justify-self: center;
+    width: 80%;
+    flex: 1 1;
+    margin: 0px;
+    border-bottom: solid var(--primary-color);
+}
+
+.vide p {
+  font-family: "Alexandria", sans-serif;
+  color: #FFFFFF;
+  width: 80%;
 }
 
 h3 {
