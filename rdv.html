@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MTL TATTOO - Rendez-vous</title>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check_circle,menu" />
+
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/general.css">
+
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/rdv.css" />
+    <link rel="stylesheet" href="css/footer.css">
   </head>
   <body>
-    <!-- <header>
+    <header>
+      <span class="material-symbols-outlined">menu</span>
       <h1>Rendez-vous</h1>
-    </header> -->
-    <iframe src="header.html" title="header" id="header" frameborder="0" scrolling="no"></iframe>
+      <img src="images/LogoMtlTattoo.png" alt="" />
+    </header>
+
+    <div id="barre-progression">
+      <div></div>
+    </div>
+
     <main>
       <form action="">
         <fieldset id="form-personal-info">
@@ -115,7 +126,9 @@
               <span class="datepicker-item">S</span>
             </div>
 
-            <div id="jours"></div>
+            <div id="jours">
+              <span></span>
+            </div>
           </div>
           </fieldset>
 
@@ -125,6 +138,12 @@
 
           <div id="timepicker"></div>  
         </fieldset>
+
+        <fieldset id="form-end">
+          <h2>Rendez vous pris avec succès!</h2>
+          <p>Nous avons hâte de vous voir au studio!</p>
+          <span class="material-symbols-outlined">check_circle</span>
+        </fieldset>
       </form>
 
       <div id="navigation-form">
@@ -132,13 +151,49 @@
         <button onclick="navigateForm(1)">Suivant</button>
       </div>
     </main>
-    <!-- <footer>
-      <p>&copy;MTL TATTOO</p>
-    </footer> -->
-    <iframe src="footer.html" title="footer" id="footer" frameborder="0" scrolling="no"></iframe>
-    <div id="barre-progression">
-      <div></div>
-    </div>
+
+    <footer>
+      <div id="coordonnees">
+        <div id="position">
+          <a href="http://maps.google.com/?q=3933 R. Saint-Denis, Montréal, QC H2W 2M4" target="_blank">
+            <img src="images/position.svg" alt="">3933 rue St-Denis
+          </a>
+        </div>
+  
+        <div id="telephone">
+          <a href="tel:5148489767">
+            <img src="images/telephone.svg" alt="">514-848-9767
+          </a>
+        </div>
+  
+        <div id="courriel">
+          <a href="mailto:contact@mtltatto.com">
+            <img src="images/courriel.svg" alt="">contact@mtltatto.com
+          </a>
+        </div>
+      </div>
+      
+      <div id="reseaux">
+        <a href="http://instagram.com/mtltattoo" target="_blank">
+          <img src="images/logo-instagram.webp" alt="">
+        </a>
+        <a href="http://www.facebook.com/mtltattoo" target="_blank">
+          <img src="images/logo-facebook.webp" alt="">
+        </a>
+      </div>
+
+      <div id="copyright">
+        <h2>&copy;MTL TATTOO</h2>
+      </div>
+
+      <input type="checkbox" name="" id="cc-langue" class="none">
+      <label for="cc-langue" id="langue">
+        <h2>FR</h2>
+        <h2>EN</h2>
+      </label>
+    </footer>
+
+
 
     <script src="js/rdv.js"></script>
   </body>

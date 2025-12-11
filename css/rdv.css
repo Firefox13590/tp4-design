@@ -1,13 +1,18 @@
 @charset "utf-8";
-/* @import url("general.css"); */
 
 /**************************
             STYLES GENERAUX
 **************************/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body, p, a{
+    color: var(--neutral-base-color-lighter);
 }
 
 #jours .datepicker-item, .timepicker-item{
@@ -20,15 +25,13 @@
     color: white;
 }
 
-fieldset, div#navigation-form{
+form, div#navigation-form{
     max-width: 95vw;
     margin: auto;
 }
 
-iframe{
-    min-height: 20vh;
+header, footer{
     width: 100vw;
-    overflow: hidden;
 }
 
 
@@ -36,6 +39,28 @@ iframe{
 /**************************
             STYLES HEADER
 **************************/
+/* voir styles css pour header */
+@import url("header.css");
+
+
+
+/**************************
+            STYLES BARRE PROGRESSION
+**************************/
+#barre-progression{
+    width: 100vw;
+    height: 5px;
+    background-color: var(--neutral-base-color);
+    position: sticky;
+    top: 0;
+}
+
+#barre-progression > div{
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-color);
+    transition: width .5s ease;
+}
 
 
 
@@ -44,19 +69,26 @@ iframe{
 **************************/
 /* general */
 main{
-    /* min-height: 60vh; */
     max-height: 100vh;
+    flex: 0 1 70%;
     margin: 1vh 0;
 }
 
-fieldset{
+form{
     background-color: var(--neutral-base-color);
-    border: none;
     border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    color: var(--neutral-base-color);
+}
+
+fieldset{
+    border: none;
+    margin-top: 20px;
 }
 
 fieldset h2{
     color: var(--primary-color);
+    margin-bottom: 10px;
 }
 
 fieldset label{
@@ -73,27 +105,26 @@ input, select{
 }
 
 /* fieldset#form-date-day */
-#datepicker-container{
-    display: flex;
+#form-date-day > p{
+    color: var(--neutral-base-color-lighter);
+    font-size: 1.25rem;
 }
 
 #datepicker{
     flex: 3 1 75%;
     border: 1px solid black;
     border-radius: 10px;
+    background-color: white;
 }
 
 #jours-semaine{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 30px;
+    margin: 10px 0 30px;
 }
 
 .datepicker-item{
     background-color: red;
-    /* width: 50px;
-    height: 50px;
-    padding: 10px; */
     width: 30px;
     height: 30px;
     padding: 5px;
@@ -110,6 +141,7 @@ input, select{
     grid-template-rows: repeat(5, 1fr);
     justify-items: center;
     row-gap: 10px;
+    margin-bottom: 10px;
 }
 
 #jours .datepicker-item{
@@ -123,29 +155,48 @@ input, select{
 #timepicker{
     flex: 1 1 25%;
     display: flex;
-    /* flex-direction: column; */
-    /* flex-flow: column wrap; */
-    flex-wrap: wrap;
-    gap: 5px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     row-gap: 10px;
 
     padding: 10px;
-    /* height: 100px; */
-    border: 1px solid black;
+    height: 200px;
     border-radius: 10px;
-    /* overflow-y: scroll; */
+    background-color: white;
 }
 
 .timepicker-item{
     background-color: gold;
-    width: 100%;
     border-radius: 20px;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
+    width: 40%;
+    flex: 1 0 20%;
+    padding: 4px;
 }
 .timepicker-item:hover{
     background-color: brown;
+}
+
+/* fieldset#form-end */
+#form-end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+
+    text-align: center;
+}
+
+#form-end span{
+    font-size: 128px;
+    margin-top: 20px;
+
+    color: var(--accent-color-light);
+    filter: brightness(200%);
 }
 
 /* navigation form */
@@ -164,6 +215,24 @@ input, select{
     padding: 5px 15px;
     border-radius: 50px;
     border: none;
+    transition: all .25s ease;
+    cursor: pointer;
+}
+#navigation-form button:disabled{
+    cursor: default;
+}
+
+#navigation-form button:last-child{
+    color: var(--neutral-base-color-lighter);
+    background-color: var(--accent-color);
+}
+#navigation-form button:last-child:hover{
+    color: var(--neutral-base-color);
+    background-color: var(--accent-color-light);
+}
+#navigation-form button:last-child:disabled{
+    color: var(--neutral-base-color-lighter);
+    background-color: var(--accent-color-dark);
 }
 
 
@@ -171,31 +240,8 @@ input, select{
 /**************************
             STYLES FOOTER
 **************************/
-#footer{
-    height: 40vh;
-    /* max-height: 40vh; */
-}
-
-
-
-/**************************
-            STYLES BARRE PROGRESSION
-**************************/
-#barre-progression{
-    width: 100vw;
-    height: 10px;
-    background-color: var(--neutral-base-color);
-    position: fixed;
-    top: 0;
-}
-
-#barre-progression > div{
-    width: 100%;
-    height: 100%;
-    background-color: var(--accent-color);
-    transition: width .5s ease;
-}
-
+/* voir styles css pour footer */
+@import url("footer.css");
 
 
 

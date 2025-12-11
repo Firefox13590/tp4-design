@@ -23,7 +23,7 @@
 @font-face {
     font-family: "Alexandria";
     src: url("../fonts/alexandria_5.2.8/webfonts/alexandria-latin-ext-400-normal.woff2");
-    font-weight: 400;
+    /* font-weight: 400; */
 }
 @font-face {
     font-family: "Kaushan Script";
@@ -50,6 +50,6 @@ h2{
 }
 
 .none{
-    display: none;
+    display: none !important;
 }
 
