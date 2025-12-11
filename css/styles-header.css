@@ -1,9 +1,11 @@
+/* fonts */
 .libre-caslon-text-bold {
   font-family: "Libre Caslon Text", serif;
   font-weight: 700;
   font-style: normal;
 }
 
+/* styles globaux du header */
 header {
   position: sticky;
   top: 0;
@@ -16,12 +18,14 @@ header {
   justify-content: space-between;
 }
 
+/* styles du nav */
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* styles de la classe textes du header */
 header nav .textes {
   display: flex;
   justify-content: flex-start;
@@ -29,10 +33,12 @@ header nav .textes {
   position: relative;
 }
 
+/* correction positionnement du texte */
 header nav h1 {
   margin-left: 64px;
 }
 
+/* styles du menu burger */
 header nav div.menuBurger {
   display: flex;
   flex-direction: column;
@@ -47,6 +53,7 @@ header nav div.menuBurger {
   z-index: 10;
 }
 
+/* styles du background du menu burger */
 header nav .menuBurger .background {
   position: absolute;
   left: -12px;
@@ -54,12 +61,12 @@ header nav .menuBurger .background {
   translate: 0 -600px;
 }
 
+/* état du background lorsque le menu est ouvert */
 header nav .menuBurger .background.actif {
   translate: 0;
-  
-
 }
 
+/* positionnement des barres du menu */
 header nav .barre1, .barre2, .barre3, .barre4 {
   position: relative;
 }
@@ -69,24 +76,30 @@ header nav .barre1, .barre4 {
   height: 4px;
 }
 
+/* animations du X */
 header nav .barre2, header nav .barre3 {
   transition: 0.2s;
   position: absolute;
 }
 
-Header nav .barre2.actif {
-  rotate: 45deg;  
-} 
 
+/* positionnement du bouton X */
 header nav .boutonX {
   position: relative;
   height: 4px;
 }
 
+/* le style permettant l'animation du x du menu */
+Header nav .barre2.actif {
+  rotate: 45deg;  
+} 
+
+/* le style permettant l'animation du x du menu */
 header nav .barre3.actif {
   rotate: -45deg;
 }
 
+/* le style des liens vers les autres pages */
 header nav a {
   display: none;
   transition: 0.2s;
@@ -99,19 +112,23 @@ header nav a {
   top: 10px;
 }
 
+/* le style des liens vers autres pages lorsque le menu est ouvert */
 header nav a.actif {
   display: flex;
 }
 
+/* style spécifique à la page sélectionnée */
 header nav a.selection {
   color: #880d1e;
 }
 
+/* le texte de titre dans le header */
 header nav h1 {
   color: #880d1e;
   font-size: 48px;
 }
 
+/* le logo dans le header */
 header nav img {
   width: 128px;
   height: auto;
@@ -129,12 +146,14 @@ header .menuToggle {
   grid-template-rows: 1fr;
 }
 
+/* le bouton toggle */
 header .toggle {
   display: grid;
   position: relative;
   height: fit-content;
 }
 
+/* le texte des boutons toggle */
 header .toggle h1 {
   font-size: 24pt;
   position: absolute;
@@ -147,9 +166,12 @@ header .toggle h1 {
   pointer-events: none;
 }
 
+/* correctif pour l'interactivité */
 header .toggle svg {
   pointer-events: none;
 }
+
+/* correctif pour l'interactivité */
 
 header .toggle path {
   pointer-events: none;
@@ -185,4 +207,62 @@ header .menuToggle .transition {
     rgba(61, 45, 51, 0.5) 67.31%,
     rgba(61, 45, 51, 0) 100%
   );
+}
+
+
+/* =============== STYLES MOBILE ================ */
+@media (min-width:576) {
+
+}
+
+/* =============== STYLES TABLETTE ================ */
+@media (min-width:576px) and (max-width:991px) 
+{
+  /* modification de l'affichage pour que les toggle apparaissent a gauche */
+  header .menuToggle {
+  display: flex;
+  overflow: hidden;
+  justify-content: left;
+}
+
+
+
+}
+
+/* =============== STYLES TABLETTE ================ */
+@media (min-width:992px) {
+  /* modification de l'affichage pour que les toggle apparaissent a gauche */
+  header .menuToggle {
+  display: flex;
+  overflow: hidden;
+  justify-content: left;
+}
+
+header nav .barre2, header nav .barre3 {
+  display: none;
+}
+
+header nav h1 {
+  display: none;
+}
+
+header nav a  {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+header nav div.menuBurger {
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+header nav .barre1 {
+  position: absolute;
+  top: 0;
+}
+
+header nav .barre4 {
+  position: absolute;
+  bottom: -20px;
+}
 }
