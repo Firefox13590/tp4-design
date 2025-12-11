@@ -210,10 +210,6 @@ header .menuToggle .transition {
 }
 
 
-/* =============== STYLES MOBILE ================ */
-@media (min-width:576) {
-
-}
 
 /* =============== STYLES TABLETTE ================ */
 @media (min-width:576px) and (max-width:991px) 
@@ -229,7 +225,7 @@ header .menuToggle .transition {
 
 }
 
-/* =============== STYLES TABLETTE ================ */
+/* =============== STYLES ORDINATEUR ================ */
 @media (min-width:992px) {
   /* modification de l'affichage pour que les toggle apparaissent a gauche */
   header .menuToggle {

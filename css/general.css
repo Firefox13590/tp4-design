@@ -38,14 +38,14 @@
 
 /* autres styles */
 body{
-    font-family: Alexandria;
+    font-family: Alexandria, sans-serif;
 }
 h1{
-    font-family: "Kaushan Script";
+    font-family: "Kaushan Script", cursive;
     font-size: 2rem;
 }
 h2{
-    font-family: "Libre Caslon Text";
+    font-family: "Libre Caslon Text", serif;
     font-size: 1.25rem;
 }
 

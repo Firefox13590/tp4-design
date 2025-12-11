@@ -3,6 +3,10 @@
 /**************************
             STYLES GENERAUX
 **************************/
+html, body{
+    overflow-x: hidden;
+}
+
 body{
     min-height: 100vh;
 
@@ -39,8 +43,13 @@ header, footer{
 /**************************
             STYLES HEADER
 **************************/
-/* voir styles css pour header */
-@import url("header.css");
+/* voir autres styles css pour header */
+@import url("styles-header.css");
+
+/* override styles */
+header{
+    position: static;
+}
 
 
 
