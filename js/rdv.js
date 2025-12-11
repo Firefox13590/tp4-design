@@ -12,7 +12,8 @@ barreProgression = document.querySelector("div#barre-progression > div");
 console.log(datepickerJours, timepicker, btnsNavigationForm, sectionsForm, barreProgression);
 
 let
-progressionForm = 0;
+progressionForm = 0,
+maxFormSteps = 4;
 
 
 
@@ -30,13 +31,13 @@ function updateFormDisplay(){
 
     if(progressionForm == 0){
         btnsNavigationForm[0].disabled = true;
-    }else if(progressionForm == 4){
+    }else if(progressionForm == maxFormSteps){
         btnsNavigationForm[1].disabled = true;
     }else{
         btnsNavigationForm.forEach(elem => elem.disabled = false);
     }
 
-    barreProgression.style.width = `${progressionForm * 25}%`;
+    barreProgression.style.width = `${progressionForm * (100 / maxFormSteps)}%`;
 }
 
 /**

@@ -81,6 +81,7 @@ footer *{
 
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 
     display: flex;
     justify-content: space-evenly;
@@ -112,9 +113,91 @@ footer *{
 
 
 
+/* =============== STYLES TABLETTE ================ */
 @media screen and (min-width: 576px) {
+    /* gestion grid */
     footer{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 1fr);
     }
+
+    #coordonnees{
+        grid-column: 1;
+        grid-row: 1/4;
+    }
+
+    #reseaux{
+        grid-column: 2;
+        grid-row: 1/4;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #copyright{
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #langue{
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    /* contenu grid-items */
+    #reseaux img{
+        width: 96px;
+        border-radius: 32px;
+    }
 }
+
+
+
+/* =============== STYLES ORDINATEUR ================ */
+@media screen and (min-width: 992px) {
+    /* gestion grid */
+    footer{
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        max-height: 15vh;
+    }
+
+    #coordonnees{
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    #reseaux{
+        grid-column: 3;
+        grid-row: 1/3;
+    }
+
+    #copyright{
+        grid-column: 1;
+        grid-row: 2;
+        align-self: center;
+    }
+
+    #langue{
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: center;
+        align-self: center;
+
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    /* contenu grid-items */
+    #coordonnees div{
+        display: inline;
+    }
+
+    #reseaux img{
+        width: 128px;
+        border-radius: 40px;
+    }
+}
+

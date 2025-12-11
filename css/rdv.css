@@ -254,3 +254,21 @@ input, select{
 
 
 
+
+
+/* =============== STYLES ORDINATEUR ================ */
+@media screen and (min-width: 992px) {
+    main{
+        flex: 1 0 70%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form, div#navigation-form{
+        min-width: 95vw;
+        margin: 0;
+    }
+}
