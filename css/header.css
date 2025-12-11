@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/**************************
+            STYLES GENERAUX
+**************************/
+header{
+    flex: 1 1 10%;
+
+    background-color: #880D1E80;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+header span.material-symbols-outlined{
+    display: none;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+header img{
+    width: 64px;
+    /* mix-blend-mode: lighten; */
+}
+
+
+
+/**************************
+            STYLES GENERAUX
+**************************/
+
+
+
+/**************************
+            STYLES GENERAUX
+**************************/
+
+
+
+/**************************
+            STYLES GENERAUX
+**************************/
+
+
+
+/**************************
+            STYLES GENERAUX
+**************************/
+
+
+
+/**************************
+            STYLES GENERAUX
+**************************/
+
+
+
+
