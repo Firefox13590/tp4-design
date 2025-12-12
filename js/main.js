@@ -93,6 +93,6 @@ function changerMenuToggle(evt) {
       document.querySelector(".transition").style.display = "none"
     } else {
       document.querySelector(".transition").style.display = "unset"
-
+      artistesVide.style.display = "none"
     }
 }
