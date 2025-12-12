@@ -19,7 +19,6 @@ console.log(choixHeures);
 
 let
 progressionForm = 0;
-// maxFormSteps = 4;
 
 
 
@@ -98,8 +97,6 @@ for(i = 8; i < 16; i++){
     });
     timepicker.append(nouvSpan);
 }
-
-
 
 
 
