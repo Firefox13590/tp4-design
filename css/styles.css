@@ -6,6 +6,18 @@
     --text-color-light: #FFD5DE;
     --primary-color: #FFC861;
     --call-to-action-color: #FF6B83;
+
+    --neutral-base-color: #3D2D33;
+    --neutral-base-color-light: #948289;
+    --neutral-base-color-lighter: #DAD0D4;
+
+    --primary-color: #FFC861;
+    --primary-color-light: #FFE7BC;
+    --primary-color-dark: #A76C00;
+
+    --accent-color: #BC001F;
+    --accent-color-light: #FF6B83;
+    --accent-color-dark: #830016;
 }
 
 /* ===================== FONTS ===================== */
@@ -103,6 +115,9 @@ align-items: stretch;
     align-items: center;
 }
 
+.none{
+    display: none !important;
+}
 
 /* Section pour la page vide */
 main section.vide {

@@ -1,200 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MTL TATTOO - Rendez-vous</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check_circle,menu" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MTL TATTOO - Rendez-vous</title>
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check_circle,menu" />
 
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/rdv.css" />
-    <link rel="stylesheet" href="css/footer.css">
-  </head>
-  <body>
-    <header>
-      <span class="material-symbols-outlined">menu</span>
-      <h1>Rendez-vous</h1>
-      <img src="images/LogoMtlTattoo.png" alt="" />
-    </header>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/general.css">
 
-    <div id="barre-progression">
-      <div></div>
-    </div>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/rdv.css" />
+  <link rel="stylesheet" href="css/footer.css">
+</head>
 
-    <main>
-      <form action="">
-        <fieldset id="form-personal-info">
-          <h2>Informations personnelles</h2>
+<body>
+  <header>
+    <span class="material-symbols-outlined">menu</span>
+    <h1>Rendez-vous</h1>
+    <img src="images/LogoMtlTattoo.png" alt="" />
+  </header>
 
-          <div>
-            <label>Nom complet</label><br>
-            <input type="text" id="prenom" placeholder="Jean" />
-            <input type="text" id="nom" placeholder="Bernard" />  
-          </div>
+  <div id="barre-progression">
+    <div></div>
+  </div>
 
-          <div>
-            <label for="tel">Téléphone</label><br>
-            <input type="tel" id="tel" placeholder="(123) 456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-          </div>
+  <main>
+    <form action="">
+      <fieldset id="form-personal-info">
+        <h2>Informations personnelles</h2>
 
-          <div>
-            <label for="email">Courriel</label><br>
-            <input type="email" id="email" placeholder="nom@exemple.com">
-          </div>
+        <div>
+          <label>Nom complet</label><br>
+          <input type="text" id="prenom" placeholder="Jean" />
+          <input type="text" id="nom" placeholder="Bernard" />
+        </div>
 
-          <div>
-            <label for="birth-date">Date de naissance</label><br>
-            <input type="date" id="dateNaissance" placeholder="AAAA/MM/JJ">
-          </div>
+        <div>
+          <label for="tel">Téléphone</label><br>
+          <input type="tel" id="tel" placeholder="(123) 456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
 
-          <div>
-            <label for="adresse">Adresse</label><br>
-            <input type="text" id="adresse" placeholder="123 rue, Ville">
-          </div>
+        <div>
+          <label for="email">Courriel</label><br>
+          <input type="email" id="email" placeholder="nom@exemple.com">
+        </div>
 
-          <div>
-            <label for="postal">Code postal</label><br>
-            <input type="text" id="postal" placeholder="A1B 2C3">
-          </div>
+        <div>
+          <label for="birth-date">Date de naissance</label><br>
+          <input type="date" id="dateNaissance" placeholder="AAAA/MM/JJ">
+        </div>
 
-        </fieldset>
+        <div>
+          <label for="adresse">Adresse</label><br>
+          <input type="text" id="adresse" placeholder="123 rue, Ville">
+        </div>
 
-        <fieldset id="form-tattoo-details">
-          <h2>Détails tatouage</h2>
+        <div>
+          <label for="postal">Code postal</label><br>
+          <input type="text" id="postal" placeholder="A1B 2C3">
+        </div>
 
-          <div>
-            <label for="corps">Partie du corps</label><br>
-            <select name="" id="corps">
-              <option value="" disabled>partie du corps</option>
-  
-              <option value="">yeux</option>
-              <option value="">visage</option>
-              <option value="">bras</option>
-              <option value="">jambe</option>
-              <option value="">dos</option>
-              <option value="">ventre</option>
-              <option value="">cou</option>
-              <option value="">cuisse</option>
-            </select>  
-          </div>
+      </fieldset>
 
-          <div>
-            <label for="taille">Surface du tatouage (cm <sup>2</sup>)</label><br>
-            <input type="number" name="" id="taille" value="10" min="1" max="100">
-            <!-- <select name="" id="">
+      <fieldset id="form-tattoo-details">
+        <h2>Détails tatouage</h2>
+
+        <div>
+          <label for="corps">Partie du corps</label><br>
+          <select name="" id="corps">
+            <option value="" disabled>partie du corps</option>
+
+            <option value="">yeux</option>
+            <option value="">visage</option>
+            <option value="">bras</option>
+            <option value="">jambe</option>
+            <option value="">dos</option>
+            <option value="">ventre</option>
+            <option value="">cou</option>
+            <option value="">cuisse</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="taille">Surface du tatouage (cm <sup>2</sup>)</label><br>
+          <input type="number" name="" id="taille" value="10" min="1" max="100">
+          <!-- <select name="" id="">
               <option value="">cm</option>
               <option value="">inch</option>
               <option value="">freedom units</option>
             </select>   -->
+        </div>
+
+        <div>
+          <label for="taille">Artiste</label><br>
+          <select name="" id="artiste">
+            <option value="">AZL</option>
+            <option value="">Carey Chan</option>
+            <option value="">Shamus Mahannah</option>
+            <option value="">Eilo</option>
+            <option value="">Max</option>
+            <option value="">Julian</option>
+            <option value="">Julines</option>
+            <option value="">SBU</option>
+            <option value="">Céleste</option>
+            <option value="">Robbie</option>
+            <option value="">Jess</option>
+            <option value="">Lia</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset id="form-date-day">
+        <h2>Date du rendez-vous</h2>
+        <p><b>&lt;</b> Décembre <b>&gt;</b></p>
+
+        <div id="datepicker">
+          <div id="jours-semaine">
+            <span class="datepicker-item">D</span>
+            <span class="datepicker-item">L</span>
+            <span class="datepicker-item">M</span>
+            <span class="datepicker-item">M</span>
+            <span class="datepicker-item">J</span>
+            <span class="datepicker-item">V</span>
+            <span class="datepicker-item">S</span>
           </div>
 
-          <div>
-            <label for="taille">Artiste</label><br>
-            <select name="" id="artiste">
-              <option value="">AZL</option>
-              <option value="">Carey Chan</option>
-              <option value="">Shamus Mahannah</option>
-              <option value="">Eilo</option>
-              <option value="">Max</option>
-              <option value="">Julian</option>
-              <option value="">Julines</option>
-              <option value="">SBU</option>
-              <option value="">Céleste</option>
-              <option value="">Robbie</option>
-              <option value="">Jess</option>
-              <option value="">Lia</option>
-            </select>  
+          <div id="jours">
+            <span></span>
           </div>
-        </fieldset>
-
-        <fieldset id="form-date-day">
-          <h2>Date du rendez-vous</h2>
-          <p><b>&lt;</b> Décembre <b>&gt;</b></p>
-
-          <div id="datepicker">
-            <div id="jours-semaine">
-              <span class="datepicker-item">D</span>
-              <span class="datepicker-item">L</span>
-              <span class="datepicker-item">M</span>
-              <span class="datepicker-item">M</span>
-              <span class="datepicker-item">J</span>
-              <span class="datepicker-item">V</span>
-              <span class="datepicker-item">S</span>
-            </div>
-
-            <div id="jours">
-              <span></span>
-            </div>
-          </div>
-          </fieldset>
-
-        <fieldset id="form-date-hour">
-          <h2>Date du rendez-vous (suite)</h2>
-          <!-- <h1><b>&lt;</b> Décembre <b>&gt;</b></h1> -->
-
-          <div id="timepicker"></div>  
-        </fieldset>
-
-        <fieldset id="form-end">
-          <h2>Rendez vous pris avec succès!</h2>
-          <p>Nous avons hâte de vous voir au studio!</p>
-          <span class="material-symbols-outlined">check_circle</span>
-        </fieldset>
-      </form>
-
-      <div id="navigation-form">
-        <button onclick="navigateForm(-1)">Précédent</button>
-        <button onclick="navigateForm(1)">Suivant</button>
-      </div>
-    </main>
-
-    <footer>
-      <div id="coordonnees">
-        <div id="position">
-          <a href="http://maps.google.com/?q=3933 R. Saint-Denis, Montréal, QC H2W 2M4" target="_blank">
-            <img src="images/position.svg" alt="">3933 rue St-Denis
-          </a>
         </div>
-  
-        <div id="telephone">
-          <a href="tel:5148489767">
-            <img src="images/telephone.svg" alt="">514-848-9767
-          </a>
-        </div>
-  
-        <div id="courriel">
-          <a href="mailto:contact@mtltatto.com">
-            <img src="images/courriel.svg" alt="">contact@mtltatto.com
-          </a>
-        </div>
-      </div>
-      
-      <div id="reseaux">
-        <a href="http://instagram.com/mtltattoo" target="_blank">
-          <img src="images/logo-instagram.webp" alt="">
-        </a>
-        <a href="http://www.facebook.com/mtltattoo" target="_blank">
-          <img src="images/logo-facebook.webp" alt="">
+      </fieldset>
+
+      <fieldset id="form-date-hour">
+        <h2>Date du rendez-vous (suite)</h2>
+        <!-- <h1><b>&lt;</b> Décembre <b>&gt;</b></h1> -->
+
+        <div id="timepicker"></div>
+      </fieldset>
+
+      <fieldset id="form-end">
+        <h2>Rendez vous pris avec succès!</h2>
+        <p>Nous avons hâte de vous voir au studio!</p>
+        <span class="material-symbols-outlined">check_circle</span>
+      </fieldset>
+    </form>
+
+    <div id="navigation-form">
+      <button onclick="navigateForm(-1)">Précédent</button>
+      <button onclick="navigateForm(1)">Suivant</button>
+    </div>
+  </main>
+
+  <footer>
+    <div id="coordonnees">
+      <div id="position">
+        <a href="http://maps.google.com/?q=3933 R. Saint-Denis, Montréal, QC H2W 2M4" target="_blank">
+          <img src="images/position.svg" alt="">3933 rue St-Denis
         </a>
       </div>
 
-      <div id="copyright">
-        <h2>&copy;MTL TATTOO</h2>
+      <div id="telephone">
+        <a href="tel:5148489767">
+          <img src="images/telephone.svg" alt="">514-848-9767
+        </a>
       </div>
 
-      <input type="checkbox" name="" id="cc-langue" class="none">
-      <label for="cc-langue" id="langue">
-        <h2>FR</h2>
-        <h2>EN</h2>
-      </label>
-    </footer>
+      <div id="courriel">
+        <a href="mailto:contact@mtltatto.com">
+          <img src="images/courriel.svg" alt="">contact@mtltatto.com
+        </a>
+      </div>
+    </div>
+
+    <div id="reseaux">
+      <a href="http://instagram.com/mtltattoo" target="_blank">
+        <img src="images/logo-instagram.webp" alt="">
+      </a>
+      <a href="http://www.facebook.com/mtltattoo" target="_blank">
+        <img src="images/logo-facebook.webp" alt="">
+      </a>
+    </div>
+
+    <div id="copyright">
+      <h2>&copy;MTL TATTOO</h2>
+    </div>
+
+    <input type="checkbox" name="" id="cc-langue" class="none">
+    <label for="cc-langue" id="langue">
+      <h2>FR</h2>
+      <h2>EN</h2>
+    </label>
+  </footer>
 
 
 
-    <script src="js/rdv.js"></script>
-  </body>
+  <script src="js/rdv.js"></script>
+</body>
+
 </html>
