@@ -4,7 +4,7 @@
             STYLES GENERAUX
 **************************/
 html, body{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 body{
@@ -24,7 +24,7 @@ body, p, a{
     transition-duration: .5s;
     transition-timing-function: ease;
 }
-#jours .datepicker-item:hover, .timepicker-item:hover{
+#jours .datepicker-item:hover, .timepicker-item:hover, .selected{
     cursor: pointer;
     color: white;
 }
@@ -51,6 +51,14 @@ header{
     position: static;
 }
 
+header nav h1{
+    font-size: 1.25rem;
+}
+
+header nav .menuBurger .background{
+    width: 320px;
+}
+
 
 
 /**************************
@@ -62,6 +70,7 @@ header{
     background-color: var(--neutral-base-color);
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 #barre-progression > div{
@@ -81,6 +90,8 @@ main{
     max-height: 100vh;
     flex: 0 1 70%;
     margin: 1vh 0;
+
+    background-color: transparent;
 }
 
 form{
@@ -116,7 +127,8 @@ input, select{
 /* fieldset#form-date-day */
 #form-date-day > p{
     color: var(--neutral-base-color-lighter);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 #datepicker{
@@ -156,7 +168,7 @@ input, select{
 #jours .datepicker-item{
     background-color: lightblue;
 }
-#jours .datepicker-item:hover{
+#jours .datepicker-item:hover, #jours .datepicker-item.selected{
     background-color: darkblue;
 }
 
@@ -185,7 +197,7 @@ input, select{
     flex: 1 0 20%;
     padding: 4px;
 }
-.timepicker-item:hover{
+.timepicker-item:hover, .timepicker-item.selected{
     background-color: brown;
 }
 
@@ -268,7 +280,7 @@ input, select{
     }
 
     form, div#navigation-form{
-        min-width: 95vw;
+        min-width: 35vw;
         margin: 0;
     }
 }
