@@ -3,10 +3,6 @@
 /**************************
             STYLES GENERAUX
 **************************/
-html, body{
-    /* overflow-x: hidden; */
-}
-
 body{
     min-height: 100vh;
 
@@ -52,7 +48,7 @@ header{
 }
 
 header nav h1{
-    font-size: 1.25rem;
+    font-size: 1.75rem;
 }
 
 header nav .menuBurger .background{
